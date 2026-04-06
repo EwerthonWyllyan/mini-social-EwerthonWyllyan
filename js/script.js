@@ -18,14 +18,10 @@ document.getElementById("likeBtn").addEventListener("click", curtir);
 let deslikeCount = 0;
 let decurtido = false; // booleana
 
-function curtir() {
- if(curtido == false){
-   likeCount++;
-   curtido = true;
-  document.getElementById("deslikeCount").innerText = deslikeCount;
-} else{
-  likeCount--;
-   curtido = false;
+function deslike() {
+ if(deslike == false){
+   likeCount--;
+   deslike = false;
   document.getElementById("deslikeCount").innerText = deslikeCount;
 }
 
