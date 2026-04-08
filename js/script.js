@@ -1,5 +1,7 @@
 let likeCount = 0;
 let curtido = false; // booleana
+let deslikeCount = 0;
+let descurtido = false; // booleana
 
 function curtir() {
  if(curtido == false){
@@ -13,17 +15,21 @@ function curtir() {
 }
 
  }
-document.getElementById("likeBtn").addEventListener("click", curtir);
 
-let deslikeCount = 0;
-let decurtido = false; // booleana
 
-function deslike() {
+
+
+function descurtir() {
  if(deslike == false){
-   likeCount--;
+   deslikeCount++;
+   deslike = true;
+  document.getElementById("deslikeCount").innerText = deslikeCount;
+} else{
+  deslikeCount--;
    deslike = false;
   document.getElementById("deslikeCount").innerText = deslikeCount;
 }
 
  }
-document.getElementById("deslikeBtn").addEventListener("click", deslike);
+document.getElementById("deslikeBtn").addEventListener("click", descurtir);
+document.getElementById("deslikeBtn").addEventListener("click", descurtir);

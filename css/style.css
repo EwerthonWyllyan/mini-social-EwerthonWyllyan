@@ -78,8 +78,21 @@ button:hover {
   background-color: #4a524d;
 }
 
+button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #41348d;
+}
+
 .comments {
-  border-top: 1px solid #1f3d2b;
+  border-top: 1px solid #000000;
   padding-top: 15px;
 }
 
